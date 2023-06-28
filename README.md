@@ -19,7 +19,7 @@ docker exec -it kafka-tutorial-kafka-1 sh
 kafka-topics.sh --bootstrap-server=localhost:9092 --create --topic sample-topic --partitions 3 replication-factor 3
 ```
 
-### booststrapのtopic一覧確認用コマンド
+###topic一覧確認用コマンド
 ```
 kafka-topics.sh --list --bootstrap-server=localhost:9092
 ```
@@ -28,12 +28,12 @@ kafka-topics.sh --list --bootstrap-server=localhost:9092
 kafka-console-producer.sh --bootstrap-server=localhost:9092 --topic sample-topic
 
 ### メッセージのサブスクライブ
-#### 別ターミナルでkafkaに入る
+別ターミナルでkafkaに入る
 ```
 docker exec -it kafka-tutorial-kafka-1 sh
 ```
 
-#### メッセージのサブスクライブ
+メッセージのサブスクライブ
 ```
 kafka-console-consumer.sh --bootstrap-server=localhost:9092 --topic sample-topic --from-beginning
 ```
