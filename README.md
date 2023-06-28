@@ -4,6 +4,8 @@ Repository for studying kafka
 ## Kafkaバージョン
 3.3
 
+## 動作確認手順
+
 ### コンテナ起動
 ```
 docker compose up -d
